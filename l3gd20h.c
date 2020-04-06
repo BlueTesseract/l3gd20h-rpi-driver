@@ -39,7 +39,7 @@ void init_axes(struct l3gd20h * l)
 	write(l->i2c, config, 2);
 
 	l->angle_x = l->angle_y = l->angle_z = 0.0;
-	l->gain_x = l->gain_y = l->angle_z = 0.00875;
+	l->gain_x = l->gain_y = l->gain_z = 0.00875;
 }
 
 
@@ -149,8 +149,8 @@ uint8_t get_reg_val(int8_t addr, struct l3gd20h * l)
 void update_axes(struct l3gd20h * l)
 {
 		double x_data = get_axis_data('x', l);
-		double y_data = get_axis_data('x', l);
-		double z_data = get_axis_data('x', l);
+		double y_data = get_axis_data('y', l);
+		double z_data = get_axis_data('z', l);
 
 		double	dx = x_data * l->gain_x * l->dt;
 		double	dy = y_data * l->gain_y * l->dt;

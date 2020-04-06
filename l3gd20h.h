@@ -16,18 +16,18 @@
 #define L3GD20G_ADDRESS 0x6B
 
 #define REG_CTRL1 0x20
-	#define DEFAULT_DRBW 0xA0
-	#define MASK_PWR_ENABLE 0x8
-	#define MASK_Z_ENABLE 0x4
-	#define MASK_X_ENABLE 0x2
-	#define MASK_Y_ENABLE 0x1
+#define DEFAULT_DRBW 0xA0
+#define MASK_PWR_ENABLE 0x8
+#define MASK_Z_ENABLE 0x4
+#define MASK_X_ENABLE 0x2
+#define MASK_Y_ENABLE 0x1
 #define REG_CTRL2 0x21
 	/* High Pass filter Mode */
-	#define DEFAULT_CTRL2 0x00
+#define DEFAULT_CTRL2 0x00
 #define REG_CTRL3 0x22
 #define REG_CTRL4 0x23
 	/* 250 dps */
-	#define DEFAULT_CTRL4 0x00
+#define DEFAULT_CTRL4 0x00
 #define REG_CTRL5 0x24
 
 #define REG_DATA_STATUS 0x27
